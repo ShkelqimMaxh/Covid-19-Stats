@@ -1,0 +1,27 @@
+<div class="row ml-5">
+  <div class="card bg-light mb-3 ml-4 mr-4" style="max-width: 18rem;">
+    <div class="card-header text-center">Raste te infektuara</div>
+    <div class="card-body">
+      <h5 class="card-title h1 text-center text-secondary font-weight-bold">{{WorldTotalCases}}</h5>
+      <p class="card-text">Ne bote gjithsej te infektuar me Covid-19.</p>
+    </div>
+  </div>
+  <div class="card bg-light mb-3 ml-5 mr-4" style="max-width: 18rem;">
+    <div class="card-header text-center">Raste te sheruara</div>
+    <div class="card-body">
+      <h5 class="card-title h1 text-center text-success font-weight-bold">{{WorldTotalRecovered}}</h5>
+      <p class="card-text">Ne bote gjithsej te sheruar.</p>
+    </div>
+
+  </div>
+  <div class="card bg-light mb-3 ml-5 " style="max-width: 18rem;">
+    <div class="card-header text-center">Raste fatale</div>
+    <div class="card-body">
+      <h5 class="card-title text-center h1 text-danger font-weight-bold">{{WorldTotalDeaths}}</h5>
+      <p class="card-text">Gjithsej vdekje ne bote.</p>
+    </div>
+  </div>
+</div>
+
+<a routerLink="/countries" class="btn btn-primary btn-lg mt-5" role="button" aria-pressed="true">Shiko rastet ne shtete</a>
+<a routerLink="/kosova" class="btn btn-primary btn-lg float-right mt-5" role="button" aria-pressed="true">Shiko rastet ne Kosove</a>

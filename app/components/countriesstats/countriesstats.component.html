@@ -1,0 +1,34 @@
+<div class="row">
+    <a routerLink="/" class="col-md-6"><i class="fas fa-arrow-circle-left mr-1"></i>Ktheu tek te dhenat per bote</a>
+    <div class="float-right offset-md-2 col-md-4">
+      <input type="text" id="searchCountry" class="form-control border-primary" placeholder="Search..."
+             [(ngModel)]="searchCountry">
+    </div>
+  </div>
+
+<table class="table table-striped mt-4">
+  <thead class="bg-dark text-light text-center">
+  <tr class="row">
+    <th class="col-md-2">Shteti</th>
+    <th class="col-md-2">Rastet</th>
+    <th class="col-md-2">Te sheruar</th>
+    <th class="col-md-1">Vdekje</th>
+    <th class="col-md-2">Raste Aktive</th>
+    <th class="col-md-1">Raste Sot</th>
+    <th class="col-md-2">Vdekje Sot</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let state of Countries | filter: searchCountry"  class="row pl-2 pr-2 text-center">
+    <th class="col-md-2">{{state.country}}</th>
+    <td class="col-md-2">{{state.cases}}</td>
+    <td class="col-md-2">{{state.active}}</td>
+    <td class="col-md-1">{{state.deaths}}</td>
+    <td class="col-md-2">{{state.todayCases}}</td>
+    <td class="col-md-1">{{state.todayCases}}</td>
+    <td class="col-md-2" >{{state.todayCases}}</td>
+  </tr>
+
+  </tbody>
+</table>
